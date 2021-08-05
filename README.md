@@ -70,8 +70,7 @@ If using Excel, follow these steps to ensure that the output file is opened in p
 2. Select `Data > Get External Data > Import Text File...`
 3. In Step 1 of the Text Wizard, select the `Delimited` radio button and press `Next >`
 4. in Step 2, check the `Comma` box in the `Delimiters` menu
-5. In Step 3, scroll to the right on the preview until you can see the last column (sort order)
-6. Click on the first column to highlight it
+5. In Step 3, click on the first column to highlight it
 7. Select the `Text` radio button in the Column data format menu
 8. Click `Finish`
 9. Select the `Existing sheet` radio button from the next menu and click `OK`
