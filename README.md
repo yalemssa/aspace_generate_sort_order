@@ -75,3 +75,6 @@ If using Excel, follow these steps to ensure that the output file is opened in p
 7. Select the `Text` radio button in the Column data format menu
 8. Click `Finish`
 9. Select the `Existing sheet` radio button from the next menu and click `OK`
+10. The spreadsheet will populate with the formatted data. To sort, click the `Data > Sort` button. 
+11. In the sort menu, check the `My list has headers` button and select `sort_order` from the `Column` drop-down. Click `OK`.
+12. You may receive a Sort Warning asking whether you should `Sort anything that looks like a number, as a number` or `Sort numbers and numbers stored as text separately`. Select `Sort numbers and numbers stored as text separately` and click `OK`
