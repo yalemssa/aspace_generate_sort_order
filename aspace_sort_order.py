@@ -74,7 +74,7 @@ def process_archival_objects(api_url, headers, sesh, row, progbar, master_task):
         ancestors = record_json.get('ancestors')[::-1]
         sort_order = get_sort_order(ancestors, position, api_url, headers, sesh, uri)
         # print(sort_order)
-        row.append(sort_order)
+        row.insert(0, sort_order)
         return row
     except Exception:
         print(traceback.format_exc())
@@ -129,7 +129,7 @@ def main():
             csvfile = csv.reader(inputfile)
             header_row = skip_report_rows(csvfile)
             csvoutfile =  csv.writer(outputfile)
-            csvoutfile.writerow(header_row + ['sort_order'])
+            csvoutfile.writerow(['sort_order'] + header_row)
             for row in csvfile:
                 try:
                     future = pool.submit(process_archival_objects, api_url, headers, sesh, row, progbar, master_task)

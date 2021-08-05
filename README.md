@@ -60,7 +60,7 @@ Depending on the number of archival objects associated with the collection, the 
 
 The application outputs a CSV file, and stores it in the same directory as the input file. The filename will be the same as the input file, with the addition of `_output` at the end of the filename - i.e. `full/path/to/input_csv_output.csv`
 
-The output CSV file includes a new column, `sort_order`, which stores the sort order that is generated during the process. The values in this column can be sorted within spreadsheet software, script, or other application as needed.
+The output CSV file includes a new first column, `sort_order`, which stores the sort order that is generated during the process. The values in this column can be sorted within spreadsheet software, script, or other application as needed.
 
 __NOTE:__ If sorting in spreadsheet software, it is important to specifically open the file as plain text. Many spreadsheet software applications will default to `General` format, which can cause leading zeros to be dropped from the sort order values. Obviously if this happens the sort order will not work properly.
 
@@ -71,7 +71,7 @@ If using Excel, follow these steps to ensure that the output file is opened in p
 3. In Step 1 of the Text Wizard, select the `Delimited` radio button and press `Next >`
 4. in Step 2, check the `Comma` box in the `Delimiters` menu
 5. In Step 3, scroll to the right on the preview until you can see the last column (sort order)
-6. Click on the last column to highlight it
+6. Click on the first column to highlight it
 7. Select the `Text` radio button in the Column data format menu
 8. Click `Finish`
 9. Select the `Existing sheet` radio button from the next menu and click `OK`
